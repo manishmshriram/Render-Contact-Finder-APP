@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact Finder</title>
-  <style>
-    body { font-family: Arial; background-color: #FFA500; text-align: center; padding-top: 50px; }
-    input[type=file], input[type=submit] {
-        margin: 20px;
-        padding: 10px;
-        font-size: 16px;
-    }
-  </style>
+    <title>Contact Finder</title>
+    <style>
+        body {
+            background-color: orange;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        input[type=file], input[type=submit] {
+            margin: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-  <h1>📇 Contact Finder</h1>
-  <form action="/upload" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" required>
-    <br>
-    <input type="submit" value="Upload and Process">
-  </form>
+    <h1>📇 Contact Finder</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xlsx" required><br>
+        <input type="submit" value="Upload & Start">
+    </form>
 </body>
 </html>
